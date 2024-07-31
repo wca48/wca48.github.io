@@ -78,6 +78,34 @@ $(function () {
     });
 });
 
+// <======== JS Program to Execute Owl-Carousel for Projects-Container ========>
+    $(function () {
+        var owl = $("#project-container .owl-carousel");
+        owl.owlCarousel({
+            margin: 0,
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 8000,
+            smartSpeed: 1500,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                700: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                },
+                2000: {
+                    items: 4
+                }
+            }
+        });
+    });
+
 
 // <======== JS Program to Add Newsletter-Container Alert ========>
 const newsletterContainerForm = document.querySelector("#newsletter-container .left-newsletter form");

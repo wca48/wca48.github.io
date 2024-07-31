@@ -1263,6 +1263,172 @@
     color: var(--mustard);
 }
 
+/* <======== Portfolio-Page Section ========> */
+
+
+/* Project Section */
+#project-container {
+    padding: 50px;
+    background-color: #f3f5f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#project-container .project-title h2 {
+    color: #fd3d0c;
+    background-color: rgb(253, 61, 12, 0.1);
+    display: inline-block;
+    padding: 15px 28px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 55px;
+}
+
+#project-container .project-heading h2 {
+    margin-top: 50px;
+    margin: 20px 0px;
+    font-size: 55px;
+    font-weight: 1000;
+    line-height: 65px;
+    
+}
+
+#project-container .projects-data {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#project-container .project-details {
+    min-height: 240px;
+    background-image: linear-gradient(#ecc9c0,#fdae9b,#ee3a0d);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0px 15px 30px 15px;
+}
+
+
+
+
+#project-container .project-details  img {
+    height: 100%;
+    width: 100%;
+border-radius: 5%;
+}
+
+#project-container .project-details .btn_project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: end;
+    margin:20px 20px;
+}
+
+#project-container .project-details .btn_preview{
+    padding: 5px;
+    width:110px;
+    height:30px;
+    background-color:#fdae9b ;
+    border-radius: 10px;
+    font-weight: 700;
+    border:#fdae9b
+}
+
+#project-container .project-details .btn_preview:hover{
+    background-color: #ecc9c0;
+    cursor: pointer;
+}
+
+
+/* Error404-Container Section */
+#error404-container {
+    padding: 150px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#error404-container .row {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#error404-container .project-title h2 {
+    color: #fd3d0c;
+    background-color: rgb(253, 61, 12, 0.1);
+    display: inline-block;
+    padding: 15px 28px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+
+@keyframes swing {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes swinghair {
+    0% {
+        transform: rotate(6deg);
+    }
+
+    100% {
+        transform: rotate(-6deg);
+    }
+}
+
+
+#handboy {
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 98% 98%;
+    transform-box: fill-box;
+}
+
+#girllight {
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 0% 97%;
+    transform-box: fill-box;
+}
+
+#hairgirl {
+    animation: swinghair ease-in-out 1.3s infinite alternate;
+    transform-origin: 60% 0%;
+    transform-box: fill-box;
+}
+
+#zero {
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+
+/* CSS Properties For Maximum Width 700px */
+@media (max-width: 700px) {
+    #error404-container {
+        padding: 130px 0px 30px 0px;
+    }
+}
+
+
+
 
 /* CSS Properties For Minimum Width 1200px */
 @media (min-width: 1200px) {
@@ -1506,6 +1672,19 @@
     #testimonial-container .testimonial-client-review .ri-star-fill {
         font-size: 27px;
     }
+
+    /* Project-Container Section (For Minimum Width 1700px) */
+    #project-container .project-title h2 {
+        font-size: 27px;
+    }
+
+    #project-container .project-heading h2 {
+        font-size: 60px;
+    }
+
+
+   
+
 
 
     /* Technology-Container Section (For Minimum Width 1500px) */
@@ -2076,7 +2255,11 @@
     #testimonial-container .testimonial-client {
         min-height: 310px;
     }
+
+
 }
+
+
 
 
 /* CSS Properties For Maximum Width 700px */
@@ -2165,6 +2348,11 @@
         min-height: 200px;
     }
 
+     /* Project-Container Section (For Maximum Width 700px) */
+     #project-container .project-heading h2 {
+        font-size: 42px;
+        margin: 20px 0px 0px 0px;
+    }
 
     /* Newsletter-Container Section (For Maximum Width 700px) */
     #newsletter-container {
@@ -2334,7 +2522,7 @@
 
     /* Testimonial-Container Section (For Maximum Width 550px) */
     #testimonial-container .testimonial-heading h2 {
-        font-size: 31px;
+        font-size: 27px;
         line-height: 35px;
         text-align: center;
         margin: 20px 0px 0px 0px;
@@ -2344,6 +2532,14 @@
         min-height: 250px;
     }
 
+    
+    /* Project-Container Section (For Maximum Width 550px) */
+    #project-container .project-heading h2 {
+        font-size: 26px;
+        line-height: 35px;
+        text-align: center;
+    }
+    
 
     /* Newsletter-Container Section (For Maximum Width 550px) */
     #newsletter-container .right-newsletter img {
@@ -2607,6 +2803,22 @@
         margin-bottom: 5px;
     }
 
+    /* Project-Container Section (For Maximum Width 400px) */
+    #project-container .project-heading h2 {
+        font-size: 26px;
+        align-items: center;
+        line-height: 30px;
+    }
+
+    #project-container .project-details {
+        min-height: 195px;
+       min-width: 255px;
+        border-radius: 10px;
+        padding: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+        
+    }
 
     /* Newsletter-Container Section (For Maximum Width 400px) */
     #newsletter-container .right-newsletter img {
@@ -2723,90 +2935,6 @@
         padding-top: 120px;
     }
 }
-
-
-
-
-/* <======== Portfolio-Page Section ========> */
-/* Error404-Container Section */
-#error404-container {
-    padding: 150px 50px 50px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#error404-container .row {
-    height: 100%;
-    width: 100%;
-    margin-top: 20px;
-}
-
-#error404-container .project-title h2 {
-    color: #fd3d0c;
-    background-color: rgb(253, 61, 12, 0.1);
-    display: inline-block;
-    padding: 15px 28px;
-    border-radius: 10px;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
-}
-
-
-@keyframes swing {
-    0% {
-        transform: rotate(10deg);
-    }
-
-    100% {
-        transform: rotate(-10deg);
-    }
-}
-
-@keyframes swinghair {
-    0% {
-        transform: rotate(6deg);
-    }
-
-    100% {
-        transform: rotate(-6deg);
-    }
-}
-
-
-#handboy {
-    animation: swing ease-in-out 1.3s infinite alternate;
-    transform-origin: 98% 98%;
-    transform-box: fill-box;
-}
-
-#girllight {
-    animation: swing ease-in-out 1.3s infinite alternate;
-    transform-origin: 0% 97%;
-    transform-box: fill-box;
-}
-
-#hairgirl {
-    animation: swinghair ease-in-out 1.3s infinite alternate;
-    transform-origin: 60% 0%;
-    transform-box: fill-box;
-}
-
-#zero {
-    transform-origin: bottom;
-    transform-box: fill-box;
-}
-
-
-/* CSS Properties For Maximum Width 700px */
-@media (max-width: 700px) {
-    #error404-container {
-        padding: 130px 0px 30px 0px;
-    }
-}
-
 
 
 
