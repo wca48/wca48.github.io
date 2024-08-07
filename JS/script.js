@@ -2,7 +2,7 @@
 AOS.init({
     duration: 1200,
 });
-
+AOS.refresh();
 
 // <======== JS Program to Run the Pre-Loader ========>
 const container = document.querySelector(".container");
