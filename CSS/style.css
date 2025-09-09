@@ -3264,3 +3264,9 @@ border-radius: 5%;
         width: 94%;
     }
 }
+
+.footer-policy-box a {
+        text-decoration: none;      /* Removes underline */
+        color: inherit;             /* Inherits color from parent, usually white or light gray in dark footers */
+        margin-right: 15px;         /* Adds spacing between the links */
+        }
