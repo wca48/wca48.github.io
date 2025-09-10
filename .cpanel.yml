@@ -1,4 +1,5 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/webexcep/public_html/
+    - export DEPLOYPATH=/home7/webexcep/public_html/
+
     - /bin/cp -r * $DEPLOYPATH
